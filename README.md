@@ -8,6 +8,7 @@ In this assignment you will construct a Vite + React.js Front-End application th
 
 ## Tasks
 
+- Add the field `id` to your Student Django Serializer
 - Create a HomePage.jsx that will give users a welcome message to your school portal
 - Create a SubjectsPage.jsx that will give users all information matching the Django API response from `http://127.0.0.1:8000/api/v1/subjects/` with a link to each individual subject.
 - Create an ASubjectPage.jsx that will give users all information matching the Django API response from `http://127.0.0.1:8000/api/v1/subjects/<str:subject>/`.
@@ -21,7 +22,7 @@ In this assignment you will construct a Vite + React.js Front-End application th
 - Vite + React
   - axios
   - React Hooks
-  - React Browser Router
+  - React Router DOM
   - Browser Router Hooks
 
 - Django API
