@@ -15,18 +15,17 @@ class Student(models.Model):
     student_email = models.EmailField(
         null=False, blank=False, unique=True, validators=[validate_school_email]
     )
-    personal_email = models.EmailField(null=False, blank=False, unique=True)
+    personal_email = models.EmailField(null=False, blank=True, unique=True)
     locker_number = models.IntegerField(
         default=110,
-        null=False,
-        blank=False,
+        blank=True,
         unique=True,
         validators=[v.MinValueValidator(1), v.MaxValueValidator(200)],
     )
     locker_combination = models.CharField(
         default="12-12-12",
         null=False,
-        blank=False,
+        blank=True,
         max_length=255,
         validators=[validate_combination_format],
     )
